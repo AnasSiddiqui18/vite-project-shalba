@@ -1,0 +1,387 @@
+/** Orbitron Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap");
+
+/** Poppins Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/** Clash Display Font  */
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("../public/fonts/ClashDisplay-Regular.otf");
+}
+
+:root {
+  --main-white: #fff;
+  --fw-600: 600;
+  --fw-800: 800;
+  --transition: 0.3s ease-in;
+  --back-purple: #13013e;
+  --LH-normal: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../public/assets/images/body_background.png);
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.background {
+  background-image: url(../public/assets/images/home_image.png);
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding-bottom: 28rem;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.op-low {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  border-radius: 11rem;
+}
+
+.navigation-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  align-items: center;
+}
+
+.logo img {
+  width: 18rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+  gap: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+nav ul li {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon-parent {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bg-white {
+  background: rgba(255, 255, 255, 1);
+}
+
+.icons {
+  font-size: 2.2rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: var(--transition);
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hero section starts  */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto !important;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/2;
+}
+
+.hero-img-width {
+  width: 23rem;
+  height: 23rem;
+  max-width: 100%;
+}
+
+.main-img {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.main-img img {
+  width: 73rem;
+  height: 73rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 5/6;
+}
+
+.cards-width {
+  width: 27.1rem;
+  height: 25.1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.first > img:nth-child(2) {
+  position: absolute;
+  bottom: -18rem;
+  left: 2rem;
+}
+
+.second > img:nth-child(2) {
+  position: absolute;
+  top: -22rem;
+  left: 5rem;
+}
+
+.third > img:nth-child(2) {
+  position: absolute;
+  top: 17rem;
+  left: -5.5rem;
+}
+
+.fourth > img:nth-child(2) {
+  position: absolute;
+  top: -20rem;
+  right: -2rem;
+}
+
+.color {
+  color: var(--back-purple);
+  width: 147.5rem;
+  height: 22.3rem;
+  filter: blur(70.5px);
+}
+
+/* ? Roadmap section */
+
+.lowerBackground {
+  background-image: url(../public/assets/images/down_background_image.png);
+  background-size: cover;
+  height: auto;
+}
+
+.roadmap-back {
+  height: 22rem;
+  background-color: var(--back-purple);
+  filter: blur(30px);
+  transform: translateY(-5.3rem);
+  margin-bottom: -15rem;
+  width: 100%;
+}
+
+.roadmap-content {
+  z-index: 1000;
+  color: var(--main-white);
+  position: relative;
+  text-align: center;
+}
+
+.roadmap-content h1 {
+  font-weight: var(--fw-800);
+  line-height: var(--LH-normal);
+  max-width: 712px;
+  margin: 0 auto;
+}
+
+.roadmap-content p {
+  margin-top: 5rem;
+  line-height: 28px;
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.roadmap-lower {
+  margin-top: -5rem;
+}
+
+.roadmap-lower h2 {
+  text-align: center;
+  color: var(--main-white);
+  margin: 15rem 0 7rem 0;
+}
+
+.roadmap-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap-cards img {
+  max-width: 100%;
+}
+
+.maincard-parent {
+  display: flex;
+  justify-content: center;
+}
+.roadmap-cards:nth-child(2) div:nth-child(2) {
+  margin: 0 -33px 0 -58px;
+  transform: translateY(-4rem);
+}
+
+.roadmap-cards:nth-child(2) div:nth-child(2) img {
+  width: 50rem;
+}
+
+/** Tokenomics Section  */
+.tokenomics-content {
+  margin-top: 22rem;
+}
+
+.tokenomics-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tokenomics-left img {
+  max-width: 100%;
+}
+
+.tokenomics-right img {
+  max-width: 100%;
+}
+
+.footer-nav {
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+/* Sub footer */
+
+.subfooter {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hr-line {
+  height: 0.3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 53.65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.flex p {
+  font-family: "ClashDisplay-Regular", sans-serif;
+  color: #ccd2e9;
+  cursor: pointer;
+}
+
+.gap {
+  gap: 4rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-icons > .icons {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.footer-icons > .icons:hover {
+  border: 2px solid transparent;
+  transition: unset;
+}
+
+.terms p {
+  font-family: "ClashDisplay-Medium", sans-serif;
+}
