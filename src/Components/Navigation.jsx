@@ -25,7 +25,7 @@ const Navigation = () => {
             <div className="icons bg-white">
               <BiLogoTelegram />
             </div>
-            <div className="menu-icon hidden">
+            <div className="menu-icon">
               <AiOutlineMenu />
             </div>
           </div>
