@@ -30,7 +30,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden !important;
 }
 
 body {
@@ -40,6 +39,7 @@ body {
   height: auto;
   user-select: none;
   -webkit-user-drag: none;
+  overflow-x: hidden;
 }
 
 .opacity {
@@ -663,6 +663,7 @@ nav ul li {
 
   .mb-main-img img {
     width: 60rem;
+    max-width: 100%;
   }
 
   .lowerBackground {
