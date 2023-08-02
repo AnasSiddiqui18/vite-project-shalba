@@ -20,9 +20,9 @@ const Menu = ({ menu, togglemenu }) => {
       <div className="menu-bottom">
         <nav>
           <ul>
-            <li>About Us</li>
-            <li>Tokenomics</li>
-            <li>Roadmap</li>
+            <li onClick={togglemenu}>About Us</li>
+            <li onClick={togglemenu}>Tokenomics</li>
+            <li onClick={togglemenu}>Roadmap</li>
           </ul>
         </nav>
       </div>

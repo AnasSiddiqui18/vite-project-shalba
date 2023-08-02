@@ -30,7 +30,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -56,12 +56,12 @@ body {
 
 .hideScroll {
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .showScroll {
   height: auto;
-  overflow: visible;
+  overflow-y: visible;
 }
 
 /** Related To Scroll  */
@@ -677,7 +677,7 @@ nav ul li {
   }
 
   .roadmap-lower h2 {
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
   }
 
   .roadmap-back {
