@@ -2,7 +2,7 @@ import { GrTwitter } from "react-icons/gr";
 import { BiLogoTelegram } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const Navigation = () => {
+const Navigation = ({ menu, togglemenu }) => {
   return (
     <div className="container">
       <div className="navigation-content">
@@ -26,7 +26,7 @@ const Navigation = () => {
               <BiLogoTelegram />
             </div>
             <div className="menu-icon">
-              <AiOutlineMenu />
+              <AiOutlineMenu onClick={togglemenu} />
             </div>
           </div>
         </div>

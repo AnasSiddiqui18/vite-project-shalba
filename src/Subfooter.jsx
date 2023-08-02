@@ -7,16 +7,16 @@ const Subfooter = () => {
       <div className="subfooter">
         <div className="hr-line"></div>
 
-        <div className="flex">
+        <div className="subContent">
           <div className="footer-icons">
-            <div className="icons">
+            <div className="icons sub-icons">
               <GrTwitter />
             </div>
-            <div className="icons">
+            <div className="icons sub-icons">
               <BiLogoTelegram />
             </div>
           </div>
-          <div className="terms flex gap">
+          <div className="terms subContent gap">
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
           </div>
