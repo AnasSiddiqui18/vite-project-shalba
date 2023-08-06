@@ -14,7 +14,7 @@ const Appwrapper = () => {
   return (
     <div className="background">
       {/* Pass the menu state and togglemenu function as props to Navigation */}
-      <Navigation menu={menu} togglemenu={togglemenu} />
+      <Navigation togglemenu={togglemenu} />
       <Menu menu={menu} togglemenu={togglemenu} />
       <Home menu={menu} togglemenu={togglemenu} />
       <Mobilehero />
