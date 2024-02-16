@@ -2,6 +2,8 @@ import { GrTwitter } from "react-icons/gr";
 import { BiLogoTelegram } from "react-icons/bi";
 
 const Subfooter = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="container">
       <div className="subfooter">
@@ -21,7 +23,7 @@ const Subfooter = () => {
             <p>Privacy Policy</p>
           </div>
           <div className="copy">
-            <p>2023 All right reserved</p>
+            <p>{currentYear} All right reserved</p>
           </div>
         </div>
       </div>
